@@ -6,7 +6,8 @@ import history from "../../history";
 
 class Login extends Component {
 
-    onFinish = () => {
+    onFinish = (values : {username: string; password: string}) => {
+        if (values.username === 'admin' && values.password === 'admin')
         history.push('/admin');
     }
 
