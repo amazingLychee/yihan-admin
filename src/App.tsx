@@ -10,8 +10,8 @@ class App extends Component {
         return (
             <Router history={history}>
                 <Switch>
-                    <Route path="/login" component={Login}/>
-                    <Route path="/admin" component={Admin}/>
+                    <Route path="/login"  component={Login}/>
+                    <Route exact path="/admin"  component={Admin}/>
                 </Switch>
             </Router>
         );
